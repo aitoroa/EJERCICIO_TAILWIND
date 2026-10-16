@@ -1,0 +1,22 @@
+/* ID >> CLASS >> TAG >> */
+
+/* Aquí podemos añadir nuestras propias reglas CSS, que se mezclarán con las de Tailwind. */
+
+@layer theme, base, components, utilities;
+
+/* Los selectores o estilos de etiqueta (tag), los añadimos dentro de la capa "base". */
+
+@layer base {
+    h1 {
+        color: red;
+    }
+}
+
+/* Los selectores por clase (.class), los añadimos dentro de la capa "components". */
+
+@layer components {
+    .botoncito {
+        padding: 3rem 5rem;
+        border: 3px rgb(255, 150, 150) solid;
+    }
+}

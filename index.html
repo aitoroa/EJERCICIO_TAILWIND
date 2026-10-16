@@ -34,8 +34,18 @@
 
     <!-- Tailwind CSS v4 desde el Play CDN (no hace falta instalar nada) -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Para declarar variables y que se sumen a las de Tailwind, tenemos que añadirlas al theme. -->
+    <style type="text/tailwindcss">
+        @theme static {
+            --color-mostaza: #1aff00;
+        }
+    </style>
+
+    <!-- Enlazamos nuestro propio CSS. -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="text-green-900 bg-stone-100">
+<body class="text-green-900 bg-mostaza">
 
     <!-- =================================================================
          1. CABECERA
@@ -85,7 +95,7 @@
                     Tornillos sueltos, botones de repuesto, cremalleras, bombillas y copias de llaves.
                     Lo de toda la vida, con la atención de siempre.
                 </p>
-                <a href="#horario" class="inline-block mt-8 px-6 py-3 text-white font-bold bg-red-700 rounded-full hover:bg-red-900">Ver horario</a>
+                <a href="#horario" class="botoncito inline-block mt-8 px-6 py-3 text-white font-bold bg-red-700 rounded-full hover:bg-red-900">Ver horario</a>
             </div>
         </section>
 
